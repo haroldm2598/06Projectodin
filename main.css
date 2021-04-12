@@ -1,0 +1,161 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap");
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #ececec;
+  font-family: "Roboto", sans-serif;
+}
+
+header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  margin: 10px 50px;
+}
+
+header .header__forgot {
+  font-size: 0.85em;
+  font-weight: 300;
+}
+
+header .header__forgot p {
+  margin: 0;
+}
+
+header .header__forgot a {
+  color: #0263b8;
+  text-decoration: none;
+}
+
+header button {
+  margin-left: 10px;
+  padding: 0 20px;
+  background-color: #0263b8;
+  color: #fff;
+  border-radius: 2px;
+  border: #000;
+}
+
+section {
+  height: 100vh;
+}
+
+.main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.main__header {
+  background-image: url("./mainLogo.png");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 500px;
+  height: 100px;
+  z-index: 1;
+}
+
+.main__form {
+  border: 1px solid rgba(117, 117, 117, 0.644);
+  border-radius: 2px;
+  height: 650px;
+  width: 380px;
+  padding: 0 25px;
+  background-color: #fff;
+  font-weight: 300;
+}
+
+.main__form--header {
+  text-align: center;
+}
+
+.main__form--header p {
+  margin: 0;
+  font-size: 0.9em;
+}
+
+.main__form--header a {
+  text-decoration: none;
+}
+
+.main__form--body {
+  margin: 20px 0;
+}
+
+.main__form--body label {
+  padding: 100px 0;
+}
+
+.main__form--body input {
+  height: 30px;
+  width: 320px;
+  margin: 15px 0 30px;
+  border-radius: 2px;
+  border: 1px solid #646464;
+}
+
+.main__form--body button {
+  background-color: #0275d8;
+  color: #fff;
+  font-weight: 400;
+  font-size: 1em;
+  border: none;
+  padding: 15px 100px;
+  margin-top: 20px;
+  border-radius: 2px;
+}
+
+.main__form--body p {
+  text-align: center;
+  font-size: 0.85em;
+  font-style: italic;
+}
+
+.main__desc {
+  width: 700px;
+  text-align: center;
+  font-size: 0.85em;
+  color: #5e5e5e;
+}
+
+.main__desc ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  list-style: none;
+}
+
+.main__desc ul li {
+  padding: 0 5px;
+}
+
+.main__desc ul li a {
+  color: #5e5e5e;
+  text-decoration: none;
+}
+
+.main__desc ul li a:hover {
+  text-decoration: underline;
+}
+/*# sourceMappingURL=main.css.map */

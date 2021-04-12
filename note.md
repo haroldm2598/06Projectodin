@@ -1,0 +1,6 @@
+    - I'm going to use Semantic Tags
+    - Make as clean as posible
+    - Structure is a must
+    - Focus on form table and use Grid/Flexbox Model
+    - Create Github repo for this project and submit it to theodinproject
+    - Create Variables for scss make as clean rules

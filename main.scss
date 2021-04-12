@@ -1,0 +1,163 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap');
+
+// colors
+$neutral: #fff;
+$mainColor: #ececec;
+$primary: #0275d8;
+$secondary: #0263b8;
+$info: #5bc0de;
+$success: #5cb85c;
+$danger: #d9534f;
+
+// Font sizing
+$xsmall: 0.85em;
+$small: 1em;
+$medium: 1.5em;
+$large: 2em;
+
+// Font family
+$roboto: 'Roboto', sans-serif;
+
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+}
+
+body {
+	margin: 0;
+	padding: 0;
+	background-color: $mainColor;
+	font-family: $roboto;
+}
+
+header {
+	display: flex;
+	justify-content: flex-end;
+	margin: 10px 50px;
+
+	.header__forgot {
+		font-size: $xsmall;
+		font-weight: 300;
+
+		p {
+			margin: 0;
+		}
+
+		a {
+			color: $secondary;
+			text-decoration: none;
+		}
+	}
+
+	button {
+		margin-left: 10px;
+		padding: 0 20px;
+		background-color: $secondary;
+		color: $neutral;
+		border-radius: 2px;
+		border: #000;
+	}
+}
+
+section {
+	height: 100vh;
+}
+
+.main {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+
+	&__header {
+		background-image: url('./mainLogo.png');
+		background-position: center;
+		background-size: cover;
+		background-repeat: no-repeat;
+		width: 500px;
+		height: 100px;
+		z-index: 1;
+	}
+
+	&__form {
+		border: 1px solid rgba(117, 117, 117, 0.644);
+		border-radius: 2px;
+		height: 650px;
+		width: 380px;
+		padding: 0 25px;
+		background-color: $neutral;
+		font-weight: 300;
+
+		&--header {
+			text-align: center;
+
+			p {
+				margin: 0;
+				font-size: 0.9em;
+			}
+
+			a {
+				text-decoration: none;
+			}
+		}
+
+		&--body {
+			// text-align: center;
+			margin: 20px 0;
+
+			label {
+				padding: 100px 0;
+			}
+
+			input {
+				height: 30px;
+				width: 320px;
+				margin: 15px 0 30px;
+				border-radius: 2px;
+				border: 1px solid rgb(100, 100, 100);
+			}
+
+			button {
+				background-color: $primary;
+				color: $neutral;
+				font-weight: 400;
+				font-size: $small;
+				border: none;
+				padding: 15px 100px;
+				margin-top: 20px;
+				border-radius: 2px;
+			}
+
+			p {
+				text-align: center;
+				font-size: $xsmall;
+				font-style: italic;
+			}
+		}
+	}
+
+	&__desc {
+		width: 700px;
+		text-align: center;
+		font-size: $xsmall;
+		color: rgb(94, 94, 94);
+
+		ul {
+			display: flex;
+			justify-content: center;
+			list-style: none;
+
+			li {
+				padding: 0 5px;
+				a {
+					color: rgb(94, 94, 94);
+					text-decoration: none;
+
+					&:hover {
+						text-decoration: underline;
+					}
+				}
+			}
+		}
+	}
+}
